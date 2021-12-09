@@ -5,41 +5,47 @@
 #include <SerialFlash.h>
 
 // GUItool: begin automatically generated code
-AudioSynthWaveform       waveform2;      //xy=63.75,1065
-AudioSynthNoisePink      pink1;          //xy=136.66666666666666,555.5555555555555
-AudioSynthNoisePink      pink2; //xy=163.3333282470703,700
-AudioSynthWaveformDc     dc1;            //xy=166.66666412353516,861.1110858917236
-AudioSynthWaveformModulated waveformMod2;   //xy=179.99999237060547,949.9999828338623
-AudioSynthWaveform       waveform1;      //xy=200,756.6666666666666
-AudioFilterBiquad        biquad1;        //xy=255.55555555555554,434.44444444444446
-AudioFilterFIR           fir1;           //xy=270,351.1111111111111
-AudioFilterStateVariable filter1;        //xy=331,583
-AudioFilterStateVariable filter2; //xy=336,700
-AudioEffectMultiply      multiply1;      //xy=361.1111145019531,878.888918876648
-AudioEffectFreeverb      freeverb3; //xy=490,538
-AudioEffectFreeverb      freeverb4; //xy=508.88885498046875,664.4443969726562
-AudioSynthWaveformModulated waveformMod1; //xy=571.2500076293945,846.2500133514404
-AudioFilterStateVariable filter3;        //xy=727.5000114440918,760.0000114440918
-AudioMixer4              mixer3; //xy=898.7777824401855,548.000020980835
-AudioOutputI2S           i2s1;           //xy=992.2222633361816,469.9999942779541
-AudioConnection          patchCord1(waveform2, 0, waveformMod2, 0);
-AudioConnection          patchCord2(pink1, 0, filter1, 0);
-AudioConnection          patchCord3(pink1, 0, filter1, 1);
-AudioConnection          patchCord4(pink2, 0, filter2, 0);
-AudioConnection          patchCord5(dc1, 0, multiply1, 0);
-AudioConnection          patchCord6(waveformMod2, 0, multiply1, 1);
-AudioConnection          patchCord7(waveform1, 0, filter2, 1);
-AudioConnection          patchCord8(filter1, 0, freeverb3, 0);
-AudioConnection          patchCord9(filter2, 0, freeverb4, 0);
-AudioConnection          patchCord10(multiply1, 0, waveformMod1, 0);
-AudioConnection          patchCord11(freeverb3, 0, mixer3, 0);
-AudioConnection          patchCord12(freeverb4, 0, mixer3, 1);
-AudioConnection          patchCord13(waveformMod1, 0, filter3, 0);
-AudioConnection          patchCord14(filter3, 1, mixer3, 2);
-AudioConnection          patchCord15(mixer3, 0, i2s1, 0);
-AudioConnection          patchCord16(mixer3, 0, i2s1, 1);
-AudioControlSGTL5000     sgtl5000_1;     //xy=973.3333435058594,367.7777729034424
+AudioSynthWaveformDc     dc2; //xy=68.57142639160156,1077.142822265625
+AudioSynthWaveformModulated waveformMod2; //xy=227.14289093017578,1035.7142944335938
+AudioSynthWaveformDc     dc1;            //xy=347.9166603088379,854.8610963821411
+AudioEffectWaveshaper    waveshape1;     //xy=414.2857131958008,989.9999713897705
+AudioSynthNoisePink      pink1;          //xy=531.6666679382324,509.30554962158203
+AudioSynthNoisePink      pink2; //xy=534.5833320617676,641.2500104904175
+AudioSynthWaveform       waveform1;      //xy=537.5000038146973,730.4166984558105
+AudioEffectMultiply      multiply1;      //xy=553.6111221313477,898.8889293670654
+AudioFilterStateVariable filter1;        //xy=756.0000038146973,508.00000953674316
+AudioFilterStateVariable filter2; //xy=758.5000038146973,690.0000095367432
+AudioSynthWaveformModulated waveformMod1; //xy=761.2500152587891,898.7500123977661
+AudioFilterStateVariable filter3; //xy=930,898.5714721679688
+AudioEffectFreeverb      freeverb4; //xy=950.1388626098633,679.4444065093994
+AudioEffectFreeverb      freeverb3; //xy=955.0000076293945,509.25000762939453
+AudioEffectDelay         delay1;         //xy=961.4286003112793,1198.5715141296387
+AudioMixer4              mixer1;         //xy=962.8571434020996,1027.1427516937256
+AudioMixer4              mixer3; //xy=1150.0277862548828,691.7500076293945
+AudioOutputI2S           i2s;           //xy=1350.9723052978516,691.2500085830688
+AudioConnection          patchCord1(dc2, 0, waveformMod2, 0);
+AudioConnection          patchCord2(waveformMod2, waveshape1);
+AudioConnection          patchCord3(dc1, 0, multiply1, 0);
+AudioConnection          patchCord4(waveshape1, 0, multiply1, 1);
+AudioConnection          patchCord5(pink1, 0, filter1, 0);
+AudioConnection          patchCord6(pink1, 0, filter1, 1);
+AudioConnection          patchCord7(pink2, 0, filter2, 0);
+AudioConnection          patchCord8(waveform1, 0, filter2, 1);
+AudioConnection          patchCord9(multiply1, 0, waveformMod1, 0);
+AudioConnection          patchCord10(filter1, 0, freeverb3, 0);
+AudioConnection          patchCord11(filter2, 0, freeverb4, 0);
+AudioConnection          patchCord12(waveformMod1, 0, filter3, 0);
+AudioConnection          patchCord13(filter3, 1, mixer1, 0);
+AudioConnection          patchCord14(freeverb4, 0, mixer3, 1);
+AudioConnection          patchCord15(freeverb3, 0, mixer3, 0);
+AudioConnection          patchCord16(delay1, 0, mixer1, 1);
+AudioConnection          patchCord17(mixer1, delay1);
+AudioConnection          patchCord18(mixer1, 0, mixer3, 2);
+AudioConnection          patchCord19(mixer3, 0, i2s, 0);
+AudioConnection          patchCord20(mixer3, 0, i2s, 1);
+AudioControlSGTL5000     sgtl5000_1;     //xy=1348.3333930969238,605.2777767181396
 // GUItool: end automatically generated code
+
 
 
 // Use these with the Teensy Audio Shield
@@ -54,6 +60,18 @@ AudioControlSGTL5000     sgtl5000_1;     //xy=973.3333435058594,367.777772903442
 Adafruit_MSA301 msa;
 
 float prevFreq;
+
+float WAVESHAPE_EXAMPLE[9] = {
+  -1,
+  -0.6,
+  -0.45,
+  -0.376,
+  -0.228,
+  -0.122,
+  0.3,
+  0.7,
+  0.1
+};
 
 // pitch scales logarithmically
 float inputToPitch(int input)
@@ -77,7 +95,7 @@ void setup() {
   sgtl5000_1.enable();
   sgtl5000_1.volume(0.5);
 
-   accelerometer
+//   accelerometer
   if (! msa.begin()) {
     Serial.println("Failed to find MSA301 chip");
     while (1) {
@@ -121,28 +139,38 @@ void setup() {
 
   //bubbles?
   
-  dc1.amplitude(0.5);
+  dc1.amplitude(1);
 
   waveformMod1.amplitude(1);
-  waveformMod1.frequency(100);
+  waveformMod1.frequency(150);
   waveformMod1.begin(WAVEFORM_SINE);
   waveformMod1.frequencyModulation(1);
 
+  dc2.amplitude(-1);
+
+
   waveformMod2.amplitude(1);
-  waveformMod2.frequency(10);
+  waveformMod2.frequency(4);
   waveformMod2.begin(WAVEFORM_SAWTOOTH);
   waveformMod2.frequencyModulation(1);
 
-  waveform2.frequency(1);
-  waveform2.amplitude(1);
-  waveform2.begin(WAVEFORM_SAMPLE_HOLD);
+  waveshape1.shape(WAVESHAPE_EXAMPLE, 9);
 
-  filter3.frequency(250);
+//  waveform2.frequency(1);
+//  waveform2.amplitude(1);
+//  waveform2.begin(WAVEFORM_SAMPLE_HOLD);
+
+  mixer1.gain(0, 0.85);
+  mixer1.gain(1, 0.45);
+
+  delay1.delay(0, 20);
+
+  filter3.frequency(350);
   filter3.resonance(1);
   
-  mixer3.gain(0, 1);
-  mixer3.gain(1, 0.75);
-  mixer3.gain(2, 0.75);
+  mixer3.gain(0, 0.55);
+  mixer3.gain(1, 0.5);
+  mixer3.gain(2, 0.5);
 
   prevFreq = 0;
 
@@ -164,7 +192,5 @@ void loop()
   filter2.frequency(constrain(map(y, -4000, 4000, 500, 700), 500, 700));
   filter2.resonance(constrain(map(y, -4000, 4000, 0, 1), 0, 1));
 
-  waveform2.frequency(constrain(map(z, -4000, 4000, 100, 300), 100, 300));
-  waveform3.frequency(constrain(map(z, -4000, 4000, 2, 4), 2, 4));
-  waveform3.phase(constrain(map(z, -4000, 4000, 0, 60), 0, 60));
+  dc2.amplitude(2*constrain(map(float(z), -4000, 4000, -1, 1), -1, 1));
 }
