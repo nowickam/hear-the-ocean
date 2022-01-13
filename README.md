@@ -1,4 +1,4 @@
-# hear-the-ocean
+# what-is-in-the-shell
 
 This project comprises of two seashells that one can listen to. The first seashell synthesizes underwater ocean ambient sounds depending on the shell’s tilt. The second seashell streams several distorted radio channels.
 
