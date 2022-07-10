@@ -18,14 +18,21 @@ The ocean and bubble sounds are synthesized with the [Teensy Audio library](http
 
 [video](https://www.youtube.com/watch?v=IiaRDXWyYTM)
 
+<img width="500" alt="ocean" src="https://user-images.githubusercontent.com/49707233/178135699-7e31f12c-15a5-4747-b597-e770f064f080.JPG">
+
+
 ## Radio
 
 The radio channels are accessed and mixed with the [ESP8266Audio library](https://github.com/earlephilhower/ESP8266Audio). Check out the [project page](https://www.hackster.io/nowickam/what-is-in-the-shell-radio-eb7a41) for more details on the implementation.
 
 [video](https://youtu.be/9V2kslX2MmU)
 
+<img width="500" alt="ocean" src="https://user-images.githubusercontent.com/49707233/178135703-df6d90cc-6a9f-447d-b380-cffaf51f59f7.JPG">
+
+
+
 ## Credits
 
 This project was done with great help from Matti Niinimäki and is a part of the [Critical Making exhibition](https://criticalmaking.xyz) at the Aalto University.
 
-![IMG_9832](https://user-images.githubusercontent.com/49707233/146928386-3001f6ea-2443-4326-8406-a0fd933ebd12.JPG)
+<img width="923" alt="ocean" src="https://user-images.githubusercontent.com/49707233/146928386-3001f6ea-2443-4326-8406-a0fd933ebd12.JPG">
